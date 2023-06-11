@@ -524,6 +524,17 @@ h1 {
 
 
 /* Responsive START */
+@media screen and (max-width: 1400px) {
+
+	/* Destinitions 1400 START */
+	.dest-left {
+		margin-right: 60px;
+	}
+	/* Destinitions 1400 END */
+
+}
+
+
 @media screen and (max-width: 1200px) {
 
 	/* Content 1200 START */
@@ -531,6 +542,31 @@ h1 {
 		padding: 0 40px;
 	}
 	/* Content 1200 END */
+
+	/* Destinitions 1200 START */
+	.dest-left {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	.dest-row {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.dest-right {
+		width: 100%;
+	}
+	.country-image {
+		width: auto;
+	}
+	/* Destinitions 1200 END */
+
+	/* Services 1200 START */
+	.services-left {
+		margin-left: 30px;
+	}
+	/* Services 1200 END */
 
 }
 
@@ -577,6 +613,15 @@ h1 {
 	}
 	/* Banner 992 END */
 
+	/* Footer 992 START */
+	.footer {
+		margin-top: 70px;
+	}
+	.footer-logo {
+		margin-bottom: 25px;
+	}
+	/* Footer 992 END */
+
 }
 
 @media screen and (max-width: 768px) {
@@ -588,7 +633,53 @@ h1 {
 	.banner-btn {
 		text-align: center;
 	}
+	.banner-descr {
+		margin-bottom: 50px;
+	}
 	/* Banner 768 END */
+
+	/* Destinitions 768 START */
+	.country-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+	/* Destinitions 768 END */
+
+	/* Services 768 START */
+	.services-wrapper {
+		margin-top: 0;
+		padding-bottom: 50px;
+		background-image: none !important;
+	}
+	.services-row {
+		flex-direction: column;
+	}
+	.services-left {
+		order: 1;
+	}
+	.services-right {
+		text-align: left;
+		margin-left: 0;
+		margin-bottom: 30px;
+	}
+	/* Services 768 END */
+
+	/* Subscribe 768 START */
+	.subscribe-form {
+		flex-direction: column;
+	}
+	.subscribe-input {
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.subscribe-form input {
+		width: 100%;
+	}
+	.subscribe-envelope img {
+		max-width: 120px;
+	}
+	/* Subscribe 768 END */
 
 }
 
@@ -599,6 +690,28 @@ h1 {
 		padding: 0 20px;
 	}
 	/* Content 575 END */
+
+	/* Destinitions 575 START */
+	.country-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	/* Destinitions 575 END */
+
+	/* Footer 575 START */
+	.footer {
+		margin-top: 70px;
+	}
+	.footer-menu ul {
+		display: block;
+	}
+	.footer-menu ul li {
+		display: block;
+	}
+	.footer-menu ul li:nth-last-child(n+2) {
+		margin-bottom: 15px;
+	}
+	/* Footer 575 END */
 
 }
 /* Responsive END */
